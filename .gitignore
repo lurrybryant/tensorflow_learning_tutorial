@@ -1,0 +1,9 @@
+# Python:
+*.py[cod]
+venv/
+*.pyc
+__pycache__
+
+.idea/
+.app.log
+.DS_Store
