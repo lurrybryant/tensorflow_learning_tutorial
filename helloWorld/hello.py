@@ -11,6 +11,20 @@ def hello_tf():
     print(sess.run([a + b, hello]))
     sess.close()
 
+def math_op():
+    a = tf.constant(3)  # 定义常量3
+    b = tf.constant(4)  # 定义常量4
+
+    add = tf.add(a, b)
+    mul = tf.multiply(a, b)
+
+    with tf.Session() as sess:  # 建立session
+        print("相加: %i" % sess.run(a + b))
+        print("相乘: %i" % sess.run(a * b))
+        # Run every operation with variable input
+        print("相加: %i" % sess.run(add, feed_dict={a: 3, b: 4}))
+        print("相乘: %i" % sess.run(mul, feed_dict={a: 3, b: 4}))
+
 
 def linear_model():
     # 使用 NumPy 生成假数据(phony data), 总共 100 个点.
@@ -118,5 +132,6 @@ if __name__ == "__main__":
     # device_demo()
     # count_demo()
     # feed_demo()
-    random_demo()
+    # random_demo()
+    math_op()
 

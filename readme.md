@@ -4,7 +4,7 @@
 3. 书本：TensorFlow实战Google深度学习框架(第2版)
         深度学习之TensorFlow—入门、原理与进阶实战
         深度学习之TensorFlow工程化实践
-
+tensorboard --logdir=./ --port=8080
 # 内容
 
 1. helloWorld: 记录入门级别的基础操作
