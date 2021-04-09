@@ -1,5 +1,5 @@
 # 资料
-1. w3cschool、官网文档、
+1. w3cschool、官网文档
 2. github: 
 3. 书本：TensorFlow实战Google深度学习框架(第2版)
         深度学习之TensorFlow—入门、原理与进阶实战
